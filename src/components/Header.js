@@ -13,7 +13,7 @@ const Header = () => {
               <Link to="/watched">İzlenenler</Link>
             </li>
             <li>
-              <Link to="/add">
+              <Link to="/add" className="btn">
                 <i className="fas fa-plus"></i>
               </Link>
             </li>

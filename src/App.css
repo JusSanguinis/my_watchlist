@@ -39,6 +39,10 @@ body {
   }
 }
 
+input:focus {
+  outline: none;
+}
+
 header {
   background-color: var(--primary);
 }
@@ -74,4 +78,82 @@ header .nav-links {
 
 header .nav-links li {
   margin-right: 30px;
+}
+
+header .nav-links li:last-child {
+  margin-right: 0;
+}
+
+.btn {
+  background-color: var(--secondary);
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 700;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  line-height: 1.1;
+}
+
+.btn:hover {
+  background-color: #1aa762;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.add-content {
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+  padding: 50px 0;
+}
+
+.add-content>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.add-content>.titles {
+  position: absolute;
+  color: #fff;
+  width: 80%;
+  height: auto;
+  left: 10%;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-content .titles h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.add-content .titles h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.add-content .input-wrapper input {
+  width: 80%;
+  height: 46px;
+  line-height: 46px;
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
 }
