@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Add = () => {
+  const [query, setQuery] = useState('');
+  console.log(query);
   return (
     <div className="add-page">
       <div className="container">
@@ -14,9 +16,14 @@ const Add = () => {
             <h2>
               Milyonlarca film, TV şovu ve keşfedilecek kişi. Şimdi keşfedin.
             </h2>
+            {query}
           </div>
           <div className="input-wrapper">
-            <input type="text" placeholder="Film, dizi, kişi ara..." />
+            <input
+              type="text"
+              placeholder="Film, dizi, kişi ara..."
+              onChange={(e) => setQuery(e.target.value)}
+            />
           </div>
         </div>
       </div>
