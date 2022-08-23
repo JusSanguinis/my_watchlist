@@ -13,7 +13,9 @@ const Header = () => {
               <Link to="/watched">İzlenenler</Link>
             </li>
             <li>
-              <i className="fas fa-plus"></i>
+              <Link to="/add">
+                <i className="fas fa-plus"></i>
+              </Link>
             </li>
           </ul>
         </div>
